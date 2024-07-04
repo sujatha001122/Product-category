@@ -1,6 +1,9 @@
 # Product Display Application
 This repository contains a web application built using HTML, CSS, and JavaScript to display products fetched from an API. Users can view products categorized under different tabs and see details such as product images, prices, discounts, and vendor information.
 
+# This application is deployed and hosted on GitHub Pages.
+- git page: https://sujatha001122.github.io/Product-category/
+- vercel url: https://product-category.vercel.app/
 ## Features
 
 ### Dynamic Product Display: 
@@ -25,6 +28,4 @@ JavaScript (ES6)
 Fetch API for data retrieval
 Deployment
 
-This application is deployed and hosted on GitHub Pages.
-git page: https://sujatha001122.github.io/Product-category/
-vercel url: https://product-category.vercel.app/
+
