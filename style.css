@@ -1,0 +1,167 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.tab {
+  padding: 10px 20px;
+  height: 30px;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 3px;
+  background-color: #d6d6d6;
+  border: 1px solid #c8c6c6;
+}
+
+.tab.active {
+  background-color: #000;
+  color: #fff;
+}
+.tab .icon {
+  margin-right: 8px;
+  font-size: 20px;
+  display: none; 
+}
+
+.tab.active .icon {
+  display: inline-block; 
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+
+.product-detail{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 60px;
+}
+
+.badge {
+  position: absolute;
+    border-radius: 3px;
+    background-color: rgb(255, 253, 253);
+    color: rgb(13, 13, 13);
+    padding: 5px;
+    font-size: 20px;
+    width: 120px;
+    height: 25px;
+    font-family: revert;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.compare-price {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.discount {
+  color: red;
+}
+#main-image {
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+}
+
+.add-to-cart {
+  margin-top: 10px;
+  width: -webkit-fill-available;
+  font-family: unset;
+  height: 50px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 767px) {
+  .product-card {
+      width: 100%;
+      font-size: 12px; 
+  }
+  .product-image {
+      height: 200px; 
+  }
+  .badge {
+      font-size: 8px; 
+      padding: 2px;
+  }
+  .price, .compare-price, .discount, .add-to-cart {
+      font-size: 12px; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-card {
+      width: 45%;
+      font-size: 13px;
+  }
+  .product-image {
+      height: 250px; 
+  }
+  .badge {
+      font-size: 12px; 
+      padding: 3px;
+  }
+  .price, .compare-price, .discount, .add-to-cart {
+      font-size: 13px; 
+  }
+}
+
+@media (min-width: 1025px) {
+  .product-card {
+      width: 22%;
+      font-size: 14px; 
+  }
+  .product-image {
+      height: 300px; 
+  }
+  .badge {
+      font-size: 13px; 
+      padding: 3px;
+  }
+  .price, .compare-price, .discount, .add-to-cart {
+      font-size: 14px; 
+  }
+}
